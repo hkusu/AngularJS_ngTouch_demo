@@ -1,0 +1,11 @@
+<div class="container">
+    <hr>
+    <div ng-show="!showActions" ng-swipe-left="showActions = true">
+        <i class="glyphicon glyphicon-arrow-left"></i>&nbsp;この文字列を左にスワイプしてください
+    </div>
+    <div ng-show="showActions" ng-swipe-right="showActions = false">
+        <i class="glyphicon glyphicon-arrow-right"></i>&nbsp;隠すには左にスワイプしてください&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-danger btn-xs" ng-click="">ボタン</button>
+    </div>
+    <hr>
+</div>
